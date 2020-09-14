@@ -8,25 +8,26 @@ Vue.mixin({
     },
     methods: {
         // ================= Set Breadcrumbs=================
-        setBreadcrumbs(model, type) {
+        setBreadcrumbs(model, type, model_name) {
+            let modelName = model_name ? model_name : model;
             if (type == 'index') {
                 var breadcrumb = [
-                    { route: model + ".index", title: model + " List" }
+                    { route: model + ".index", title: modelName + " List" }
                 ];
             } if (type == 'create') {
                 var breadcrumb = [
-                    { route: model + ".index", title: model + " List" },
-                    { route: model + ".create", title: model + " Create" }
+                    { route: model + ".index", title: modelName + " List" },
+                    { route: model + ".create", title: modelName + " Create" }
                 ];
             } else if (type == 'edit') {
                 var breadcrumb = [
-                    { route: model + ".index", title: model + " List" },
-                    { route: model + ".edit", title: model + " Edit" }
+                    { route: model + ".index", title: modelName + " List" },
+                    { route: model + ".edit", title: modelName + " Edit" }
                 ];
             } else if (type == 'view') {
                 var breadcrumb = [
-                    { route: model + ".index", title: model + " List" },
-                    { route: model + ".show", title: model + " View" }
+                    { route: model + ".index", title: modelName + " List" },
+                    { route: model + ".show", title: modelName + " View" }
                 ];
             }
             breadcrumbs.dispatch("setBreadcrumbs", breadcrumb);

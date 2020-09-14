@@ -43,17 +43,17 @@
       <div class="tab-content" id="myTabContent">
         <!--                BITM-->
         <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <table class="table table-striped table-bordered ">
+          <table class="table table-striped table-bordered">
             <thead class="bg-darken">
               <tr>
                 <th width="5%">#</th>
-                <th >Course Name</th>
+                <th>Course Name</th>
                 <th>Student Name</th>
                 <th>Date</th>
-                <th>Fees</th>
-                <th>Pay Amount</th>
-                <th>Due</th>
-                <th>Status</th>
+                <th>Fees (TK)</th>
+                <th>Pay Amount (TK)</th>
+                <th>Due (TK)</th>
+                <th class="text-center">Status</th>
               </tr>
             </thead>
             <tbody>
@@ -62,20 +62,24 @@
                 <td>Modern Web Design</td>
                 <td>Leyon</td>
                 <td>06/09/2020</td>
-                <td>Tk. 5,000</td>
-                <td>Tk. 3,000</td>
-                <td>Tk.2,000</td>
-                <td class="text-danger text-center">Pending</td>
+                <td>5,000</td>
+                <td>3,000</td>
+                <td>2,000</td>
+                <td class="text-danger text-center">
+                  <span class="badge badge-danger">PENDING</span>
+                </td>
               </tr>
               <tr>
                 <td>02</td>
                 <td>Cloud Journey with AWS: Beginner to Advance level</td>
                 <td>Jelly</td>
                 <td>07/04/2020</td>
-                <td>Tk. 8,000</td>
-                <td>Tk. 6,000</td>
-                <td>Tk. 0000</td>
-                <td class="text-primary text-center">Paid</td>
+                <td>8,000</td>
+                <td>6,000</td>
+                <td>0000</td>
+                <td class="text-primary text-center">
+                  <span class="badge badge-success">PAID</span>
+                </td>
               </tr>
 
               <tr>
@@ -83,10 +87,12 @@
                 <td>Software Testing</td>
                 <td>Paret</td>
                 <td>06/09/2020</td>
-                <td>Tk. 5,000</td>
-                <td>Tk. 3,000</td>
-                <td>Tk.2,000</td>
-                <td class="text-danger text-center">Pending</td>
+                <td>5,000</td>
+                <td>3,000</td>
+                <td>2,000</td>
+                <td class="text-danger text-center">
+                  <span class="badge badge-danger">PENDING</span>
+                </td>
               </tr>
 
               <tr>
@@ -94,10 +100,12 @@
                 <td>Microsoft Asp.net</td>
                 <td>Leyon</td>
                 <td>06/09/2020</td>
-                <td>Tk. 5,000</td>
-                <td>Tk. 3,000</td>
-                <td>Tk.2,000</td>
-                <td class="text-danger text-center">Pending</td>
+                <td>5,000</td>
+                <td>3,000</td>
+                <td>2,000</td>
+                <td class="text-danger text-center">
+                  <span class="badge badge-danger">PENDING</span>
+                </td>
               </tr>
 
               <tr>
@@ -105,10 +113,12 @@
                 <td>Ethical Hacking</td>
                 <td>Titaew</td>
                 <td>06/09/2020</td>
-                <td>Tk. 5,000</td>
-                <td>Tk. 3,000</td>
-                <td>Tk.0000</td>
-                <td class="text-primary text-center">Paid</td>
+                <td>5,000</td>
+                <td>3,000</td>
+                <td>0000</td>
+                <td class="text-primary text-center">
+                  <span class="badge badge-success">PAID</span>
+                </td>
               </tr>
 
               <tr>
@@ -116,27 +126,29 @@
                 <td>Modern Web Design</td>
                 <td>Patia</td>
                 <td>06/09/2020</td>
-                <td>Tk. 5,000</td>
-                <td>Tk. 3,000</td>
-                <td>Tk.2,000</td>
-                <td class="text-danger text-center">Pending</td>
+                <td>5,000</td>
+                <td>3,000</td>
+                <td>2,000</td>
+                <td class="text-danger text-center">
+                  <span class="badge badge-danger">PENDING</span>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
         <!--                COLLABORATIVE-->
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <table class="table table-striped table-bordered ">
+          <table class="table table-striped table-bordered">
             <thead class="bg-darken">
               <tr>
                 <th width="5%">#</th>
-                <th >Course Name</th>
+                <th>Course Name</th>
                 <th>Student Name</th>
                 <th>Date</th>
-                <th>Fees</th>
-                <th>Pay Amount</th>
-                <th>Due</th>
-                <th>Status</th>
+                <th>Fees (TK)</th>
+                <th>Pay Amount (TK)</th>
+                <th>(TK)</th>
+                <th class="text-center">Status</th>
               </tr>
             </thead>
             <tbody>
@@ -145,20 +157,24 @@
                 <td>Modern Web Design</td>
                 <td>Marit</td>
                 <td>06/09/2020</td>
-                <td>Tk. 5,000</td>
-                <td>Tk. 3,000</td>
-                <td>Tk.2,000</td>
-                <td class="text-danger text-center">Pending</td>
+                <td>5,000</td>
+                <td>3,000</td>
+                <td>2,000</td>
+                <td class="text-danger text-center">
+                  <span class="badge badge-danger">PENDING</span>
+                </td>
               </tr>
               <tr>
                 <td>02</td>
                 <td>Cloud Journey with AWS: Beginner to Advance level</td>
                 <td>Jelly</td>
                 <td>07/04/2020</td>
-                <td>Tk. 8,000</td>
-                <td>Tk. 6,000</td>
-                <td>Tk. 0000</td>
-                <td class="text-primary text-center">Paid</td>
+                <td>8,000</td>
+                <td>6,000</td>
+                <td>0000</td>
+                <td class="text-primary text-center">
+                  <span class="badge badge-success">PAID</span>
+                </td>
               </tr>
 
               <tr>
@@ -166,10 +182,12 @@
                 <td>Software Testing</td>
                 <td>Paret</td>
                 <td>06/09/2020</td>
-                <td>Tk. 5,000</td>
-                <td>Tk. 3,000</td>
-                <td>Tk.2,000</td>
-                <td class="text-danger text-center">Pending</td>
+                <td>5,000</td>
+                <td>3,000</td>
+                <td>2,000</td>
+                <td class="text-danger text-center">
+                  <span class="badge badge-danger">PENDING</span>
+                </td>
               </tr>
 
               <tr>
@@ -177,10 +195,12 @@
                 <td>Microsoft Asp.net</td>
                 <td>Leyon</td>
                 <td>06/09/2020</td>
-                <td>Tk. 5,000</td>
-                <td>Tk. 3,000</td>
-                <td>Tk.2,000</td>
-                <td class="text-danger text-center">Pending</td>
+                <td>5,000</td>
+                <td>3,000</td>
+                <td>2,000</td>
+                <td class="text-danger text-center">
+                  <span class="badge badge-danger">PENDING</span>
+                </td>
               </tr>
 
               <tr>
@@ -188,10 +208,12 @@
                 <td>Ethical Hacking</td>
                 <td>Lorem.</td>
                 <td>06/09/2020</td>
-                <td>Tk. 5,000</td>
-                <td>Tk. 3,000</td>
-                <td>Tk.2,000</td>
-                <td class="text-danger text-center">Pending</td>
+                <td>5,000</td>
+                <td>3,000</td>
+                <td>2,000</td>
+                <td class="text-danger text-center">
+                  <span class="badge badge-danger">PENDING</span>
+                </td>
               </tr>
 
               <tr>
@@ -199,10 +221,12 @@
                 <td>Modern Web Design</td>
                 <td>Lorem ipsum.</td>
                 <td>06/09/2020</td>
-                <td>Tk. 5,000</td>
-                <td>Tk. 3,000</td>
-                <td>Tk.2,000</td>
-                <td class="text-danger text-center">Pending</td>
+                <td>5,000</td>
+                <td>3,000</td>
+                <td>2,000</td>
+                <td class="text-danger text-center">
+                  <span class="badge badge-danger">PENDING</span>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -275,13 +299,13 @@ export default {
   created() {
     this.get_paginate_data(this.model, this.search_data); // get data list
     this.getRouteName(this.model); // get route name for edit / delete / show
-    this.setBreadcrumbs(this.model, "index"); // Set Breadcrumbs
+    this.setBreadcrumbs(this.model, "index", "Payment History"); // Set Breadcrumbs
   },
 };
 </script>
 <style >
-  .bg-darken{
-    background: #2d4a67;
-    color: aliceblue;
-  }
+.bg-darken {
+  background: #2d4a67;
+  color: aliceblue;
+}
 </style>

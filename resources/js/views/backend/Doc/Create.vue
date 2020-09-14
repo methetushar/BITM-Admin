@@ -92,7 +92,7 @@
             <!------------ Single Input ------------>
             <div class="form-group col-2">
               <label>Active / Deactive</label>
-              <div class="row col-12 mt-2">
+              <div class="row col-12">
                 <b-form-checkbox
                   class="col-form-label-sm col-6"
                   v-model="data.status2"
@@ -202,28 +202,28 @@ export default {
       model: model,
       selectMenu: {
         1: "Nothing",
-        2: "Something"
+        2: "Something",
       },
       data: {
         select: "",
         profile: "",
-        pdf_file: ""
+        pdf_file: "",
       },
       image: {},
-      errors: {}
+      errors: {},
     };
   },
   methods: {
-    submit: function() {
+    submit: function () {
       const error = this.validation.countErrors();
-      this.$validate().then(res => {
+      this.$validate().then((res) => {
         // If there is an error
         if (error > 0) {
           this.flashMessage.warning({
             title: "Empty Mandatory Fields!!",
             icon: this.$root.baseurl + "/images/warning.png",
             message:
-              "You need to fill " + error + " more empty mandatory fields"
+              "You need to fill " + error + " more empty mandatory fields",
           });
           return false;
         }
@@ -238,16 +238,16 @@ export default {
         }
       });
     },
-    submitWithImage: function() {
+    submitWithImage: function () {
       const error = this.validation.countErrors();
-      this.$validate().then(res => {
+      this.$validate().then((res) => {
         // If there is an error
         if (error > 0) {
           this.flashMessage.warning({
             title: "Empty Mandatory Fields!!",
             icon: this.$root.baseurl + "/images/warning.png",
             message:
-              "You need to fill " + error + " more empty mandatory fields"
+              "You need to fill " + error + " more empty mandatory fields",
           });
           return false;
         }
@@ -279,28 +279,28 @@ export default {
     },
     axiosReq() {
       const error = this.validation.countErrors();
-      this.$validate().then(res => {
+      this.$validate().then((res) => {
         if (res) {
           this.$root.spinner = true;
           axios
             .post("/module/create", this.data)
-            .then(res => {
+            .then((res) => {
               this.notification("Module Create Successfully", "success");
               this.$router.push({
                 name: this.model + ".index",
-                params: { model: this.data.model_name }
+                params: { model: this.data.model_name },
               });
             })
-            .catch(error =>
+            .catch((error) =>
               this.notification(
                 "Something went wrong, but Some file are crated, please check",
                 "error"
               )
             )
-            .then(alw => setTimeout(() => (this.$root.spinner = false), 200));
+            .then((alw) => setTimeout(() => (this.$root.spinner = false), 200));
         }
       });
-    }
+    },
   },
   created() {
     if (this.$route.params.id) {
@@ -318,9 +318,9 @@ export default {
 
   // ================== validation rule for form ==================
   validators: {
-    "data.name": function(value = null) {
+    "data.name": function (value = null) {
       //return Validator.value(value).required("Name is required");
-    }
-  }
+    },
+  },
 };
 </script>

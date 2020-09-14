@@ -4,21 +4,15 @@
 //     return redirect('admin');
 // });
 
-use Illuminate\Support\Facades\DB;
 
 // Route::view('/', 'layouts.frontend_app')->name('home.page');
-Route::get('/',function(){
+Route::get('/', function () {
     return redirect('admin/loginme');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-
-Route::get('/db', function () {
-    return DB::connection('mysql2')->table('activity_log')->get();
-});
 
 
 // for storage linked in public folder=======

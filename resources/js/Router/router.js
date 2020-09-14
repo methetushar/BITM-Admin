@@ -44,27 +44,48 @@ const routes = [
             { path: '/menu/create', name: 'menu.create', component: () => import('./../views/backend/Website/Menu/Create'), beforeEnter: authGuard },
             { path: '/menu/:id', name: 'menu.show', component: () => import('./../views/backend/Website/Menu/View'), beforeEnter: authGuard },
             { path: '/menu/:id/edit', name: 'menu.edit', component: () => import('./../views/backend/Website/Menu/Create'), beforeEnter: authGuard },
-
-
             // ------------------BitmPayment portion------------------
-            { path: '/bitmpayment', name: 'bitmpayment.index', meta: { title: 'BitmPayment', nav: true }, component: () => import('./../views/backend/BitmPayment/Index'), beforeEnter: authGuard },
+            { path: '/bitmpayment', name: 'bitmpayment.index', meta: { title: 'Payment History', nav: true }, component: () => import('./../views/backend/BitmPayment/Index'), beforeEnter: authGuard },
             { path: '/bitmpayment/create', name: 'bitmpayment.create', component: () => import('./../views/backend/BitmPayment/Create'), beforeEnter: authGuard },
             { path: '/bitmpayment/:id', name: 'bitmpayment.show', component: () => import('./../views/backend/BitmPayment/View'), beforeEnter: authGuard },
             { path: '/bitmpayment/:id/edit', name: 'bitmpayment.edit', component: () => import('./../views/backend/BitmPayment/Create'), beforeEnter: authGuard },
-
-
             // ------------------CollaborativePayment portion------------------
             { path: '/collaborativepayment', name: 'collaborativepayment.index', meta: { title: 'CollaborativePayment', nav: true }, component: () => import('./../views/backend/CollaborativePayment/Index'), beforeEnter: authGuard },
             { path: '/collaborativepayment/create', name: 'collaborativepayment.create', component: () => import('./../views/backend/CollaborativePayment/Create'), beforeEnter: authGuard },
             { path: '/collaborativepayment/:id', name: 'collaborativepayment.show', component: () => import('./../views/backend/CollaborativePayment/View'), beforeEnter: authGuard },
             { path: '/collaborativepayment/:id/edit', name: 'collaborativepayment.edit', component: () => import('./../views/backend/CollaborativePayment/Create'), beforeEnter: authGuard },
-
-
-
-
-
-
-
+            // ------------------Notice portion------------------
+            { path: '/notice', name: 'notice.index', meta: { title: 'Notice', nav: true }, component: () => import('./../views/backend/Notice/Index'), beforeEnter: authGuard },
+            { path: '/notice/create', name: 'notice.create', component: () => import('./../views/backend/Notice/Create'), beforeEnter: authGuard },
+            { path: '/notice/:id', name: 'notice.show', component: () => import('./../views/backend/Notice/View'), beforeEnter: authGuard },
+            { path: '/notice/:id/edit', name: 'notice.edit', component: () => import('./../views/backend/Notice/Create'), beforeEnter: authGuard },
+            // ------------------Course portion------------------
+            { path: '/course', name: 'course.index', meta: { title: 'Course', nav: true }, component: () => import('./../views/backend/Course/Index'), beforeEnter: authGuard },
+            { path: '/course/create', name: 'course.create', component: () => import('./../views/backend/Course/Create'), beforeEnter: authGuard },
+            { path: '/course/:id', name: 'course.show', component: () => import('./../views/backend/Course/View'), beforeEnter: authGuard },
+            { path: '/course/:id/edit', name: 'course.edit', component: () => import('./../views/backend/Course/Create'), beforeEnter: authGuard },
+            { path: '/assign-course', name: 'course.assing', meta: { title: 'Course', nav: true }, component: () => import('./../views/backend/Course/Assing'), beforeEnter: authGuard },
+            { path: '/assign-course-create', name: 'courseAssign.create', meta: { title: 'Course', nav: true }, component: () => import('./../views/backend/Course/AssingCreate'), beforeEnter: authGuard },
+            // ------------------Trainer portion------------------
+            { path: '/trainer', name: 'trainer.index', meta: { title: 'Trainer', nav: true }, component: () => import('./../views/backend/Trainer/Index'), beforeEnter: authGuard },
+            { path: '/trainer/create', name: 'trainer.create', component: () => import('./../views/backend/Trainer/Create'), beforeEnter: authGuard },
+            { path: '/trainer/:id', name: 'trainer.show', component: () => import('./../views/backend/Trainer/View'), beforeEnter: authGuard },
+            { path: '/trainer/:id/edit', name: 'trainer.edit', component: () => import('./../views/backend/Trainer/Create'), beforeEnter: authGuard },
+            // ------------------Batch portion------------------
+            { path: '/batch', name: 'batch.index', meta: { title: 'Batch', nav: true }, component: () => import('./../views/backend/Batch/Index'), beforeEnter: authGuard },
+            { path: '/batch/create', name: 'batch.create', component: () => import('./../views/backend/Batch/Create'), beforeEnter: authGuard },
+            { path: '/batch/:id', name: 'batch.show', component: () => import('./../views/backend/Batch/View'), beforeEnter: authGuard },
+            { path: '/batch/:id/edit', name: 'batch.edit', component: () => import('./../views/backend/Batch/Create'), beforeEnter: authGuard },
+            // ------------------Student portion------------------
+            { path: '/student', name: 'student.index', meta: { title: 'Student', nav: true }, component: () => import('./../views/backend/Student/Index'), beforeEnter: authGuard },
+            { path: '/student/create', name: 'student.create', component: () => import('./../views/backend/Student/Create'), beforeEnter: authGuard },
+            { path: '/student/:id', name: 'student.show', component: () => import('./../views/backend/Student/View'), beforeEnter: authGuard },
+            { path: '/student/:id/edit', name: 'student.edit', component: () => import('./../views/backend/Student/Create'), beforeEnter: authGuard },
+            // ------------------Certificate portion------------------
+            { path: '/certificate', name: 'certificate.index', meta: { title: 'Certificate', nav: true }, component: () => import('./../views/backend/Certificate/Index'), beforeEnter: authGuard },
+            { path: '/certificate/create', name: 'certificate.create', component: () => import('./../views/backend/Certificate/Create'), beforeEnter: authGuard },
+            { path: '/certificate/:id', name: 'certificate.show', component: () => import('./../views/backend/Certificate/View'), beforeEnter: authGuard },
+            { path: '/certificate/:id/edit', name: 'certificate.edit', component: () => import('./../views/backend/Certificate/Create'), beforeEnter: authGuard },
 
 
 

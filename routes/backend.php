@@ -45,6 +45,9 @@ Route::prefix('admin/')->group(function () {
         // ------------------Change password------------------
         Route::post('check-old-password',               'AdminController@checkOldPassword');
         Route::post('change-password',                  'AdminController@passwordChange');
+
+        Route::view('assign-course',                    'layouts.backend_app')->name('course.assign');
+        Route::view('assign-course-create',              'layouts.backend_app')->name('courseAssign.create');
     });
 
 
@@ -72,6 +75,9 @@ Route::prefix('admin/')->group(function () {
             Route::post('content-file/{content}',       'ContentController@storeFile')->name('content.storeFile');
             Route::delete('content/{contentFile}',      'ContentController@destroy')->name('content.destroy');
         });
+
+
+
 
 
 
